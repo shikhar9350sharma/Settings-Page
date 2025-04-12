@@ -1,0 +1,881 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* This is the Dark lover */
+    /* --svgColor: #aaa9a9;
+    --hoverColor: #333333;
+    --bgColor: #202020;
+    --fontColor: #ffffff;
+    --borderColor: rgb(255, 255, 255);
+    --buttonColor: #c900ff; */
+
+    /* This is the Firozi shade */
+    /* --svgColor : #0a1236;
+    --hoverColor :  #d62c81;
+    --bgColor : #349497;
+    --fontColor : #ffffff;
+    --borderColor : rgb(255, 255, 255);
+    --buttonColor: #c900ff; */
+
+
+    /* This is the bright theme (i don't like you.) */
+    --svgColor: #060c42;
+    --hoverColor: #4cc4ba;
+    --bgColor: #ffffff;
+    --fontColor: #000000;
+    --borderColor: #130270;
+    --buttonColor: #c900ff;
+
+    /* This is the purple shade */
+    /* --svgColor : #f51313;
+    --hoverColor :  #9151da;
+    --bgColor : #450777;
+    --fontColor : #ffffff;
+    --borderColor : #ffffff; 
+    --buttonColor: #c900ff;*/
+
+
+
+    /* this is the bekkar theme  */
+    /* --svgColor : #f51313;
+    --hoverColor :  #444;
+    --bgColor : #1A1D23;
+    --fontColor : #ffffff;
+    --borderColor : #ffffff; 
+    --buttonColor: #c900ff; */
+
+
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+    font-family: sans-serif;
+
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px;
+
+}
+
+.container {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 100%;
+    /* border: 1px solid orange; */
+
+}
+
+.profile {
+    padding: 10px;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.profile-box .image {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.username .email {
+    font-size: 12px;
+}
+
+.profile-box:hover {
+    background-color: var(--hoverColor);
+    border-radius: 12px;
+    transition: .3s ease-in;
+}
+
+.Entry {
+    padding: 5px;
+    margin: 10px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 7px;
+    background-color: #404040;
+    border-radius: 12px;
+    position: relative;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    background-color: #404040;
+    height: 25px;
+    width: 280px;
+}
+
+.input input::placeholder {
+    color: rgb(148, 148, 148);
+}
+
+#bottom-line {
+    position: absolute;
+    bottom: 1px;
+    width: 300px;
+    display: block;
+    border: 1px solid var(--svgColor);
+}
+
+.Entry :hover,
+.input:hover,
+#bottom-line:hover,
+.input input:hover {
+    background-color: #535353;
+}
+
+.home {
+    margin-left: 15px;
+    /* padding: 5px; */
+    /* border: 1px solid red; */
+}
+
+.home-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.home-box img {
+    width: 20px;
+}
+
+.home-box a {
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+.home-box:hover {
+    background-color: var(--hoverColor);
+}
+
+.mainContent {
+    width: calc(100vw - 25vw);
+    overflow: hidden;
+    /* border: 2px solid green; */
+
+}
+
+.dividedBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-2 {
+    padding: 10px;
+
+}
+
+.profile-box-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-1 {
+    width: 125px;
+    height: 75px;
+    border-radius: 7px;
+    border: 4px solid black;
+    overflow: hidden;
+}
+
+.image-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.text .span-1 {
+    font-size: 14px;
+}
+
+.text .span-2 {
+    font-size: 12px;
+    color: var(--svgColor);
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+
+}
+
+.no-internet,
+.update-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.no-internet:hover,
+.update-box:hover {
+    background-color: var(--hoverColor);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.recommend-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 250px;
+    border: 2px solid var(--borderColor);
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.personalize-box {
+    height: 400px;
+    border: 2px solid var(--borderColor);
+    border-radius: 12px;
+}
+
+.cloud {
+    height: 150px;
+    border: 2px solid var(--borderColor);
+    border-radius: 12px;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+
+.blutooth-box {
+    height: 400px;
+    border: 2px solid var(--borderColor);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.text-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.text-3 .sub-heading {
+    font-size: 14px;
+    color: var(--svgColor);
+}
+
+.hr-1 {
+    border: none;
+    border-top: 1px solid var(--fontColor);
+    margin: 10px 0;
+}
+
+.wifi,
+.install-apps,
+.display,
+.colors,
+.browse,
+.cloud-1,
+.bluetooth,
+.device,
+.game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    gap: 20px;
+}
+
+.wifi-box,
+.install-apps-box,
+.display-box,
+.colors-box,
+.browse-box,
+.cloud-box,
+.bluetooth-box,
+.device-box,
+.game-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.devices-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.device-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 4px;
+    width: 190px;
+    height: 190px;
+}
+
+.edit {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.edit-svg:hover {
+    background-color: var(--hoverColor);
+    border-radius: 4px;
+}
+
+.device-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.text-2-span-1 {
+    font-size: 17px;
+}
+
+.text-2-span-2 {
+    font-size: 14px;
+    color: var(--svgColor);
+}
+
+.Add-device-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Add-device-box:hover,
+.view-more-devices:hover {
+    background-color: var(--hoverColor);
+}
+
+.view-more-devices {
+    text-align: center;
+    color: var(--fontColor);
+    border: 2px solid var(--borderColor);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.bluetooth-device-box {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+}
+
+.other-bluetooth-options {
+    margin-top: 30px;
+}
+
+.bluetooth-option-1 {
+    border: 2px solid var(--borderColor);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.color-mode-box-2 {
+    padding: 7px;
+}
+
+.button-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.button-box-status {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border: 2px solid var(--svgColor);
+    border-radius: 12px;
+    background-color: var(--bgColor);
+}
+
+.ball {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 3px;
+    border-radius: 50%;
+    background-color: var(--svgColor);
+}
+
+.ball:hover {
+    transform: scale(1.1);
+}
+
+.personalize-box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.bg-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+}
+
+.bg-imgs {
+    width: 125px;
+    height: 75px;
+    border-radius: 7px;
+    border: 4px solid black;
+    overflow: hidden;
+}
+
+.bg-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-imgs:hover {
+    border: 4px solid var(--borderColor);
+}
+
+.color-mode-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    background-color: var(--buttonColor);
+    border-radius: 4px;
+}
+
+.main-divide-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 850px;
+    overflow-y: scroll;
+    /* border: 2px solid orange; */
+}
+
+.main-divide-box::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+/* .main-divide-box::-webkit-scrollbar-track{
+    background: #f0f0f0;
+}
+.main-divide-box::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius: 5px;
+}
+.main-divide-box::-webkit-scrollbar-thumb:hover{
+    background: #555;
+
+} */
+.system-content-box {
+    border: 2px solid var(--borderColor);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.system-content-box:hover {
+    background-color: var(--hoverColor);
+}
+
+.not-connected-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.not-box {
+    display: flex;
+    gap: 12px;
+}
+
+.text-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+}
+
+.text-4-span-1 {
+    font-size: 19px;
+}
+
+.text-4-span-2 {
+    font-size: 16px;
+    color: var(--svgColor);
+}
+
+.get-help-box {
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100px;
+    background-color: var(--buttonColor);
+}
+
+.network-content-box,
+.game-content-box {
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.network-content-box:hover {
+    background-color: var(--hoverColor);
+}
+
+.windows-images-box {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 5px;
+    margin-top: 40px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.main-window-image {
+    width: 400px;
+    height: 185px;
+    border: 8px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.main-window-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-window-image:hover {
+    border: 8px solid var(--borderColor);
+}
+
+.other-windows-image {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 8px;
+
+}
+
+.theme-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    gap: 8px;
+}
+
+.apps-content-box {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.profile-card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 15px 0 15px 0;
+    gap: 10px;
+}
+
+.profile-card-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 3px;
+    padding: 5px;
+}
+
+.profile-pic {
+    width: 110px;
+    height: 105px;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.acc-settings,
+.related-settings,
+.products-settings {
+    padding: 3px;
+    margin: 10px 0 10px 0;
+}
+
+.font-size {
+    font-size: 16px;
+}
+
+.game-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+}
+
+.complete-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.game {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.game:hover {
+    background-color: var(--hoverColor);
+}
+
+.hr-2 {
+    border: none;
+    border-top: 1px solid var(--fontColor);
+    margin: 4px 0;
+}
+
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.fixed-width {
+    width: 400px;
+}
+
+.game-pic {
+    width: 250px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.game-pic img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.game-pic:hover {
+    filter: grayscale(1.2);
+}
+
+.office-home-box {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 60px 60px;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.product-images {
+    border: 2px solid var(--borderColor);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-images img {
+    width: 100%;
+    height: 100%;
+}
+
+.time-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.time-date {
+    display: flex;
+    flex-direction: column;
+}
+
+#current-time {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+#current-date {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--svgColor);
+    font-size: 14px;
+}
+
+.time-details {
+    display: flex;
+    align-items: center;
+
+}
+
+#update-button {
+    width: 166px;
+}
+
+.update-download-button {
+    color: var(--buttonColor);
+    font-size: 14px;
+    padding: 5px;
+
+}
+
+.update-download-button:hover {
+    background-color: var(--hoverColor);
+    cursor: pointer;
+}
+
+.pause-box {
+    display: flex;
+    position: relative;
+    width: 149px;
+    gap: 5px;
+    font-size: 14px;
+    align-items: center;
+    border: 1px solid var(--borderColor);
+    border-radius: 8px;
+}
+
+.pause-box-1 {
+    width: 110px;
+    border-right: 1px solid var(--borderColor);
+    padding: 4px 4px 4px 4px;
+}
+
+.pause-box-1:hover,
+.pause-box-2:hover {
+    background-color: var(--hoverColor);
+}
+
+.pause-box-2 svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 3px;
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.learn-more-box {
+    color: var(--buttonColor);
+
+}
+
+.learn-more-box:hover {
+    background-color: var(--hoverColor);
+    cursor: pointer;
+}
